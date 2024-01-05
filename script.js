@@ -65,9 +65,9 @@ function changemode() {
   if (mode == "dark") {
     moon.style.display = "none";
     sun.style.display = "block";
-
-    root.style.setProperty("--front", "#fbf6f6");
-    root.style.setProperty("--back", "#990011");
+    
+    root.style.setProperty("--front", "darkslategray");
+    root.style.setProperty("--back", "#e7e8e2");
     window.VANTA.current.destroy();
     birdsback();
 
