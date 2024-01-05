@@ -30,6 +30,7 @@ button {
 	border-radius: 0.5em;
     border: 0;
     color: var(--back);
+    background-color: var(--front);
     font-weight: bolder;
 	padding: 0.375em 0.75em;
 	transition:
