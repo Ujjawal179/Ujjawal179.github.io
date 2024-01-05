@@ -1,0 +1,74 @@
+
+.aboutpage{
+    display: flex;
+    /* width: 100vw; */
+    min-height: 100vh;
+    overflow-y: hidden;
+
+}
+
+.info{
+    animation: 2s slide-left;
+    width: 60%;
+    padding: 5%;
+}
+
+.abouthead{
+    /* font-size: xxx-large; */
+    font-family: Rubik Doodle Shadow;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.image{
+    animation: 2s slide-right;
+    width: 20rem;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.desc{
+    font-size: 1.2rem;
+}
+
+.subhead{
+    margin-top:2rem;
+    letter-spacing: 5px;
+}
+.qoute{
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    letter-spacing: 2px;
+}
+
+.qoute::before {
+    content: "Aut inveniam viam aut faciam";
+    transition: all 1s ease;
+  }
+
+  .qoute:hover::before {
+    content: "I shall either find a way or make one";
+    font-size: large;
+    font-family: sans-serif;
+  }
+
+  .qoute:hover{
+    /* box-shadow: inset 400px 0 0 0  var(--front); */
+    background-color: var(--front);
+    color: var(--back);
+  }
+
+
+@media (max-width: 768px) {
+    .aboutpage{
+        flex-direction: column;
+        align-items: center;
+    }
+    .image{
+        border-radius: 50px;
+        width: 100%;
+    }
+    .info, .imagebox{
+        width: 70%;
+    }
+
+}
+

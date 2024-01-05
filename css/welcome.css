@@ -1,0 +1,87 @@
+:root{
+  
+  --back: #1f2125;
+  /* #990011 */
+  --front: #e7dfcd;
+  /* #fbf6f6 */
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+.welcome {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: fixed;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+}
+
+.hey {
+  text-align: justify;
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+  font-size: xxx-large;
+  font-family: Rubik Doodle Shadow;
+  letter-spacing: 2.5px;
+}
+
+
+.name {
+  color: white;
+  font-weight: normal;
+  font-family:  Paytone One;
+  text-shadow: 1px 1px 10px black;
+  font-variation-settings: "wght" 500, "wdth" 125;
+  -webkit-text-stroke: 0.3px #212121;
+}
+
+.intro {
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+
+.links a {
+  text-decoration: none;
+  margin: 1rem;
+  color: inherit;
+  font-size: 1.25rem;
+  transition: all 0.7s linear;
+}
+
+.links {
+  display: flex;
+  margin-top: 1.5rem;
+  font-weight: bolder;
+}
+
+.stretch {
+  transform: scale(1.2, 1);
+}
+
+.welcome a {
+  margin: 0 -0.25rem;
+  padding: 0 1rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.welcome a:hover {
+  box-shadow: inset 250px 0 0 0 var(--back);
+  color: white;
+}
+
+
+@media (max-width : 768px) {
+  .hey{
+    font-size: 5vw;
+    -webkit-text-stroke: 1px white;
+  }
+}

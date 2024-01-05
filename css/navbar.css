@@ -1,0 +1,98 @@
+.nav {
+  display: flex;
+  color: var(--front);
+  justify-content: right;
+  padding-right: 5%;
+  padding-top: 20px;
+  position: fixed;
+  z-index: 10;
+  margin-left: auto;
+
+  width: 100%;
+}
+
+.nav div {
+  margin: 1vw;
+  font-size: x-large;
+  padding-right: 1rem;
+}
+
+.nav .sun {
+  display: none;
+}
+
+.nav .close {
+  display: none;
+  z-index: 100;
+  color: var(--front);
+  top: 0;
+  position: fixed;
+  padding: 5%;
+
+}
+
+.menu {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--back);
+  color: var(--front);
+  /* align-items: center; */
+  /* background-color: var(--back); */
+}
+
+.menu .item{
+  padding-left: 10vw;
+}
+
+.menu a{
+  all: unset;
+  font-size: 10vw;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.menu :nth-child(1) a{
+  letter-spacing: 25px;
+}
+.menu :nth-child(2) a{
+  letter-spacing: 10px;
+}
+.menu :nth-child(3) a{
+  letter-spacing: 7px;
+}
+.menu :nth-child(4) a{
+  letter-spacing: -5px;
+}
+
+.menu div:hover > a{
+  letter-spacing: 0;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif */
+  text-shadow: 1px 1px 10px;
+}
+
+@media (max-width: 500px) {
+  
+.menu .item{
+  padding-left: 5vw;
+}
+  .menu a{
+    font-size: 16vw;
+  }
+}
+
+@media (min-width: 900px) {
+  .menu a{
+    font-size: 90px;
+    width: 90px;
+  }
+  
+.menu .item{
+  padding-left: 20vw;
+}
+}
