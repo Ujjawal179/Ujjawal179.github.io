@@ -72,4 +72,16 @@ body {
   a:hover {
     font-size: 2.1em;
   }
+
+
+@media (max-width: 768px) {
+  *, body{
+    cursor: auto;
+
+  }
+
+  #cursor-circle, #cursor-dot{
+    display: none;
+  }
+}
   
