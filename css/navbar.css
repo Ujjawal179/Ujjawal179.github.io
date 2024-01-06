@@ -15,7 +15,6 @@
   margin: 1vw;
   font-size: x-large;
   padding-right: 1rem;
-  color: white;
 }
 
 .nav .sun {
@@ -33,37 +32,32 @@
 }
 
 .menu {
-  position: absolute;
-  width: 100vw;
+  width: 0;
   height: 100vh;
   top: 0;
   left: 0;
   z-index: 1;
-  /* display: flex; */
-  display: none;
+  display: flex;
+  /* display: none; */
   flex-direction: column;
   justify-content: center;
-
-  background-color: var(--back);
   color: var(--front);
   /* align-items: center; */
-  /* background-color: var(--back); */
+  background-color: var(--back);
+  transform: translateX(-100%);
+  transition:  1s;
+  /* animation: slide-in 2s ease-in; */
+
 }
 
 @keyframes slide-in {
-  from{
-    transform: translateX(100%);
+  from {
+  transform: translateX(100%);
+
   }
+
   to{
     transform: translateX(0);
-  }
-}
-@keyframes slide-out {
-  from{
-    transform: translateX(0);
-  }
-  to{
-    transform: translateX(100%);
   }
 }
 

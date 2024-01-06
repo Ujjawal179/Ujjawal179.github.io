@@ -65,7 +65,7 @@ function changemode() {
   if (mode == "dark") {
     moon.style.display = "none";
     sun.style.display = "block";
-    
+
     root.style.setProperty("--front", "darkslategray");
     root.style.setProperty("--back", "#e7e8e2");
     window.VANTA.current.destroy();
@@ -99,12 +99,6 @@ const observer = new IntersectionObserver((enteries) => {
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
-// delay
-function delay(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-
 // navbar function
 let nav = "close";
 let open = document.getElementsByClassName("open")[0];
@@ -114,10 +108,12 @@ function navbar() {
   if (nav == "close") {
     open.style.display = "none";
     close.style.display = "block";
-    sun.style.color = 'var(--back)';
-    moon.style.color = 'var(--back)';
     menu.style.display = "flex";
-    menu.style.animation = "slide-in 1s ";
+  // animation: 
+    // menu.style.animation = "slide-in 2s ease-in";
+    menu.style.width = "100vh";
+    // menu.target.classList.add('slide-in');
+    // menu.style.transition = "slide-left 2s forwards";
 
     // scrolling user to top
     window.scrollTo(0, 0);
@@ -128,15 +124,8 @@ function navbar() {
   } else {
     open.style.display = "block";
     close.style.display = "none";
-    async function trans () {
-      
-    menu.style.animation = "slide-out 1s ";
-    await delay(1000);
     menu.style.display = "none";
-    }
-    trans();
-    sun.style.color = 'white';
-    moon.style.color = 'white';
+
     document.querySelector("html").style.overflow = "auto";
 
     nav = "close";
