@@ -33,6 +33,7 @@
 }
 
 .menu {
+  position: absolute;
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -42,10 +43,28 @@
   display: none;
   flex-direction: column;
   justify-content: center;
+
   background-color: var(--back);
   color: var(--front);
   /* align-items: center; */
   /* background-color: var(--back); */
+}
+
+@keyframes slide-in {
+  from{
+    transform: translateX(100%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+@keyframes slide-out {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(100%);
+  }
 }
 
 .menu .item{
