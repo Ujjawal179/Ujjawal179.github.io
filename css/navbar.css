@@ -28,8 +28,10 @@
   padding: revert;
   color: white;
   transition: 0.5s ease-in-out;
-  border: 2px solid white;
+  border: solid white;
   backdrop-filter: blur(15px);
+  border-width: 0px 1px 1px 0px;
+  background: rgb(0,0,0,0.2);
 }
 
 .nav .cv a{
@@ -45,7 +47,6 @@
   color:black;
   border-radius: 20px;
   background-color: white;
-  border: 2px solid transparent;
 
 }
 
