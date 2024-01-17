@@ -5,6 +5,10 @@
     cursor: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 
 
 .hidden{
