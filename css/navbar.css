@@ -138,6 +138,11 @@
   .menu a{
     font-size: 16vw;
   }
+  .nav .cv{
+    color: black;
+    border-radius: 20px;
+    background-color: white;
+  }
 }
 
 @media (min-width: 900px) {
