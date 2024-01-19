@@ -39,15 +39,23 @@
 }
 
 .linkedin {
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.7rem;
 }
 
-.linkedin h3 {
+.linkedin h3,
+.github h3 {
   display: inline;
 }
 
-.bi-linkedin {
+.bi-linkedin,
+.bi-github {
   font-size: x-large;
+  transition: 0.7s ease;
+}
+
+.bi-linkedin:hover {
+  color: #0077b5;
 }
 
 .contactcard a {
@@ -110,8 +118,8 @@
     border-radius: 50%/100px 100px 0 0;
     height: 400px;
   }
-  .gmailbtn{
-    margin:-20px;
+  .gmailbtn {
+    margin: -20px;
     border-radius: 100px;
     height: 80px;
   }
