@@ -62,6 +62,9 @@
         flex-direction: column;
         align-items: center;
     }
+    .desc{
+        font-size: medium;
+    }
     .image{
         border-radius: 50px;
         width: 100%;
