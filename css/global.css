@@ -71,6 +71,7 @@ body {
   a {
     font-size: 2em;
     transition: 0.3s linear;
+    -webkit-tap-highlight-color: transparent;
   }
   
   a:hover {
