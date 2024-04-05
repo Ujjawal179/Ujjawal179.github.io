@@ -59,7 +59,7 @@
         <span>02</span><a onclick="navbar()" href="#about">ABOUT</a>
       </div>
       <div class="hover item">
-        <span>03</span><a onclick="navbar()" href="#skills">SKILLS</a>
+        <span>03</span><a onclick="navbar()" href="#skills">WORKS</a>
       </div>
       <div class="hover item">
         <span>04</span><a onclick="navbar()" href="#contact">CONTACT</a>
@@ -79,10 +79,7 @@
     </div>
     <div class="nav">
       <div class="cv hover">
-        <a
-          href="https://drive.google.com/file/d/1VkhA_ayilrPkkWb2-Tfub-xe8cGdj0I-/view?usp=sharing"
-          >CV</a
-        >
+        <a href="https://drive.google.com/file/d/1VkhA_ayilrPkkWb2-Tfub-xe8cGdj0I-/view?usp=sharing">CV</a>
       </div>
       <div class="moon hover mode" onclick="changemode()">
         <i class="bi bi-moon"></i>
@@ -119,7 +116,11 @@
       </div>
       <div class="aboutpage" id="about">
         <div class="imagebox">
-          <img class="image" src="/images/photo.png" alt="" />
+          <img
+            class="image"
+            src="/images/photo.png"
+            alt=""
+          />
         </div>
         <div class="info">
           <h1 class="abouthead">ABOUT</h1>
@@ -139,60 +140,75 @@
         </div>
       </div>
       <div class="skills" id="skills">
+        <span class="subhead">SKILLS</span>
         <h1>Technical Expertise</h1>
         <p>Always ready to try hands-on new and emerging technologies</p>
 
         <div class="row">
-          <div class="column hidden">
-            <span class="title"> Programming Language</span>
-            <div class="tech">
-              <img class="skillsvg" src="/images/c.svg" />
-              <img class="skillsvg" src="/images/python.svg" />
-              <img class="skillsvg" src="/images/js.svg" />
+          <div class="col-md-6 hidden column">
+            <div class="column">
+              <span class="skillhead">Web Dev (React, Django, JS... )</span>
+              <div class="progbar">
+                <span class="percent" style="width: 70%">70%</span>
+              </div>
             </div>
           </div>
-          <div class="column hidden">
-            <span class="title"> FrontEnd Skills</span>
-            <div class="tech">
-              <img class="skillsvg" src="/images/html.svg" />
-              <img class="skillsvg" src="/images/css.svg" />
-              <img class="skillsvg" src="/images/sass.svg" />
-              <img class="skillsvg" src="/images/next-js.svg" />
-              <img class="skillsvg" src="/images/react.svg" />
-              <img class="skillsvg" src="/images/jquery-vertical.svg" />
-              <img class="skillsvg" src="/images/bootstrap.svg" />
-              <img class="skillsvg" src="/images/tailwind-css.svg" />
-              <img class="skillsvg" src="/images/figma.svg" />
+          <div class="col-md-6 hidden column">
+            <div class="column">
+              <span class="skillhead">Python</span>
+              <div class="progbar">
+                <span class="percent" style="width: 75%">75%</span>
+              </div>
             </div>
           </div>
-          <div class="column hidden">
-            <span class="title"> BackEnd Skills</span>
-            <div class="tech">
-              <img class="skillsvg" src="/images/django.svg" />
-              <img class="skillsvg" src="/images/nodejs.svg" />
-              <img class="skillsvg" src="images/Express.png" />
-              <img class="skillsvg" src="/images/mongodb.svg" />
-              <img class="skillsvg" src="/images/mysql.svg" />
+          <div class="col-md-6 hidden column">
+            <div class="column">
+              <span class="skillhead">DBMS (MySQL & MongoDB)</span>
+              <div class="progbar">
+                <span class="percent" style="width: 60%">60%</span>
+              </div>
             </div>
           </div>
-          <div class="column hidden">
-            <span class="title"> Data Analytics</span>
-            <div class="tech">
-              <img class="skillsvg" src="/images/numpy-1.svg" />
-              <img class="skillsvg" src="/images/pandas.svg" />
-              <img class="skillsvg" src="/images/matplotlib-1.svg" />
-              <img class="skillsvg" src="/images/r-lang.svg" />
-              <img class="skillsvg" src="/images/google-analytics.svg" />
+          <div class="col-md-6 hidden column">
+            <div class="column">
+              <span class="skillhead">C++</span>
+              <div class="progbar">
+                <span class="percent" style="width: 60%">60%</span>
+              </div>
             </div>
           </div>
-          <div class="column hidden">
-            <span class="title"> Other Tools</span>
-            <div class="tech">
-              <img class="skillsvg" src="/images/github.svg" />
-              <img class="skillsvg" src="/images/google.svg" />
-              <img class="skillsvg" src="/images/aws.svg" />
-              <img class="skillsvg" src="/images/adobe-photoshop-2.svg" />
-              <img class="skillsvg" src="/images/Adobe Illustrator.svg" />
+          <div class="col-md-6 hidden column">
+            <div class="column">
+              <span class="skillhead">Selenium</span>
+              <div class="progbar">
+                <span class="percent" style="width: 50%">50%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 hidden column">
+            <div class="column">
+              <span class="skillhead">Cloud</span>
+              <div class="progbar">
+                <span class="percent" style="width: 60%">60%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 hidden column">
+            <div class="column">
+              <span class="skillhead">Data Analysis</span>
+              <div class="progbar">
+                <span class="percent" style="width: 60%">60%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 hidden column">
+            <div class="column">
+              <span class="skillhead"
+                >Design (Photoshop, Illustrator & XD)</span
+              >
+              <div class="progbar">
+                <span class="percent" style="width: 85%">85%</span>
+              </div>
             </div>
           </div>
         </div>
@@ -224,7 +240,51 @@
               Collapse All
             </button>
           </div>
-          
+          <div class="timeline__item">
+            <div class="timeline__item-header">
+              <button
+                class="timeline__arrow"
+                type="button"
+                id="item2"
+                aria-labelledby="item2-name"
+                aria-expanded="false"
+                aria-controls="item2-ctrld"
+                aria-haspopup="true"
+                data-item="2"
+              >
+                <svg
+                  class="timeline__arrow-icon"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  height="24px"
+                >
+                  <use href="#arrow" />
+                </svg>
+              </button>
+              <span class="timeline__dot"></span>
+              <span id="item2-name" class="timeline__meta">
+                <time class="timeline__date">Jan '24 - Present</time><br />
+                <strong class="timeline__title">SDM </strong>
+              </span>
+            </div>
+            <div
+              class="timeline__item-body"
+              id="item2-ctrld"
+              role="region"
+              aria-labelledby="item2"
+              aria-hidden="true"
+            >
+              <div class="timeline__item-body-content">
+                <p class="timeline__item-p">
+                  Project SDM is Species Distribution Model in which we are
+                  going to analyze wildlife population, and predict future
+                  population using predicted future climate dataset.
+                  <br />
+                  Tech-Stack: Node.js, R & MySQL &emsp; Duration: 10weeks
+                </p>
+              </div>
+            </div>
+          </div>
           <div class="timeline__item">
             <div class="timeline__item-header">
               <button
@@ -358,9 +418,7 @@
                   commands and utilizing Cloud Shell. This experience has
                   endowed me with valuable skills. <br />
                   Duration: 1month &emsp;
-                  <a
-                    style="color: var(--front); font-size: inherit"
-                    href="https://bit.ly/G-cloud"
+                  <a style="color: var(--front); font-size: inherit;" href="https://bit.ly/G-cloud"
                     >Certificate</a
                   >
                 </p>
@@ -552,9 +610,7 @@
                   pivotal role in augmenting the organization's online presence
                   by developing and implementing a chatbot, contributing to
                   enhanced customer engagement. <br />Few Designs:
-                  <a
-                    href="https://bit.ly/3S9lzQ9"
-                    style="color: var(--front); font-size: inherit"
+                  <a href="https://bit.ly/3S9lzQ9" style="color: var(--front); font-size: inherit;"
                     >LINK</a
                   >
                   &emsp; Duration: 10hr/week
@@ -574,7 +630,9 @@
         </div>
         <div class="contactcard" id="contact">
           <!-- <button class="gmailbtn">START A PROJECT 🔮</button> -->
-          <a href="mailto:ujjawal.agrawal179@gmail.com">
+          <a
+            href="mailto:ujjawal.agrawal179@gmail.com"
+          >
             <button class="gmailbtn"></button
           ></a>
 
@@ -582,7 +640,8 @@
 
           <div class="email">
             <h3><i class="bi bi-arrow-right"></i>Write me an Email</h3>
-            <a href="mailto:ujjawal.agrawal179@gmail.com"
+            <a
+              href="mailto:ujjawal.agrawal179@gmail.com"
               ><span>ujjawal.agrawal179@gmail.com</span></a
             >
           </div>
