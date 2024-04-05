@@ -37,6 +37,11 @@
   justify-content: flex-start;
 }
 
+.back{
+  background: #ffffff;
+  border-radius: 50%;
+}
+
 @media  (max-width: 900px) {
   .skills{
   padding: 3rem 0rem;
