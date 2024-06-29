@@ -122,12 +122,14 @@
   letter-spacing: -5px;
 }
 
-.menu div:hover > a{
-  
-  transition: all .75s;
-  letter-spacing: 0;
+.menu div a {
+  transition: ease-in-out .4s; 
   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif */
-  text-shadow: 1px 1px 10px;
+}
+
+.menu div:hover > a {
+  text-shadow: 1px 1px 4px;  /* Add styles on hover */
+  letter-spacing: 0;
 }
 
 @media (max-width: 500px) {
