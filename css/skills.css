@@ -47,3 +47,9 @@
   padding: 3rem 0rem;
   }
 }
+
+@media  (max-width: 400px) {
+  .row{
+  width: 95%;
+  }
+}
