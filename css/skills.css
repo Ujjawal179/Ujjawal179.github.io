@@ -50,6 +50,9 @@
 
 @media  (max-width: 400px) {
   .row{
-  width: 95%;
+  width: 100%;
+  }
+  .column{
+    margin: .5rem;
   }
 }
